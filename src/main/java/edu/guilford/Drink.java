@@ -12,7 +12,8 @@ public class Drink {
 
     //constructors
     public Drink() {
-        name = "Water";
+        String[] possible = new String[]{"Coke", "Pepsi", "Sprite", "Water"};
+        name = possible[random.nextInt(possible.length)]; //copilot
         price = random.nextDouble() * 10;
         quantity = random.nextInt(100); //oz
         calories = random.nextInt(100) * 3;
